@@ -3,9 +3,9 @@ An attempt at coding every day, even just a little bit! By doing this, I wish to
 
 ## Data structures I've practiced using so far:
 1. Hashmaps
-..* twoSum.py
+    * twoSum.py
 
-## Languages I've practice using so far:
+## Programming languages I've practice using so far:
 1. Python
-..* twoSum.py
+    * twoSum.py
 
