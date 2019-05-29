@@ -14,28 +14,34 @@ def isPermutationPalinedrome(s):
         return True
     sLower = s.lower()
     sLower = sLower.replace(' ', '')
-    permutated = generatePermutation(sLower)
-    for perm in permutated:
-    return True
+    count = {}
 
-def generatePermutation(s):
-    permutated = []
-    for i in range(len(s)):
-        for j in range(i + 1, len(s) + 1):
-            permutated.append(s[i:j])
-    return permutated
+    for char in sLower:
+        count[char] = 0 # Initialize the map
 
-def isPalinedrome(s):
-    for i in len(s):
-        if s[i] != s[i - 1]:
-            return False
+    for char in sLower:
+        count[char] += 1
+
+    oddChar = 0
+    for char in count:
+        if count[char] % 2 == 1:
+            oddChar += 1
+    if oddChar > 1:
+        return False
     return True
 
 s = 'Tact Coa'
 print(s + " is a permutation of a palinedrome = " + str(isPermutationPalinedrome(s)))
 
-s = 'abcd'
-print(generatePermutation(s))
+s = 'AABBBCC'
+print(s + " is a permutation of a palinedrome = " + str(isPermutationPalinedrome(s)))
+
+s = 'ABBBCC'
+print(s + " is a permutation of a palinedrome = " + str(isPermutationPalinedrome(s)))
+
+s = 'ABBCC'
+print(s + " is a permutation of a palinedrome = " + str(isPermutationPalinedrome(s)))
+
 
 # Thoughts
 # Question: Is an emptry string a palinedrome? What if it's just 1 character?
@@ -44,3 +50,8 @@ print(generatePermutation(s))
 
 # Need to try all permutations of the given string and check if the generated string is a palinedrome
 # First remove all spaces in the string and either make all chars lower or upper
+
+# It was way too complicated to do the first attempt, so I thought about it differently.
+# Since a palinedrome means that it has an even amount of each character and only 1 odd number of character
+
+# O(n)
