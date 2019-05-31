@@ -1,7 +1,7 @@
 # 100-days-of-coding
 An attempt at coding every day, even just a little bit! By doing this, I wish to challenge my problem solving skills and train my discipline.
 
-## Techniques I've practiced using so far:
+## Techniques:
 1. Hashmap
     * twoSum.py
     * is_unique.py
@@ -14,7 +14,8 @@ An attempt at coding every day, even just a little bit! By doing this, I wish to
     
 3. Array
     * longest_palinedrome.py
-## Programming languages I've practice using so far:
+    
+## Programming Languages:
 1. Python
     * twoSum.py
     * is_unique.py
