@@ -50,3 +50,5 @@ print(s + ' -> urlify! -> ' + urlify(s, 13))
 # So that I know where the actual string ends and is not supposed to include spaces.
 # This tells me that I probably should be looping through the characters {length} times.
 
+# A problem I ran into: strings in python are immutable.
+

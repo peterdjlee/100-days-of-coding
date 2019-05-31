@@ -55,3 +55,6 @@ print(s + " is a permutation of a palinedrome = " + str(isPermutationPalinedrome
 # Since a palinedrome means that it has an even amount of each character and only 1 odd number of character
 
 # O(n)
+
+# An alternate solution can be counting the number of odd characters as they are added
+# then check at the end. But this is not necessarily optimzing our original algorithm.
