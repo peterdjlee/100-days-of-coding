@@ -4,7 +4,6 @@
 #define N 5
 
 void rotate(int arr[N][N], int n) {
-
 }
 
 void printArr(int arr[N][N], int n) {
@@ -82,3 +81,7 @@ int main() {
 
     return 0;
 }
+
+// Thoughts
+// The solution I have right now doesn't work;
+// I'm going to have to implement an iterative algorithm along with an actual rotating edge algorithm
