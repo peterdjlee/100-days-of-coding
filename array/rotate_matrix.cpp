@@ -18,24 +18,23 @@ void printArr(int arr[N][N], int n) {
 }
 
 void rotate(int arr[N][N], int n) {
-    int temp = 0;
-    int num = 0;
-    int offset = 0;
+    for (int i = 0; i < n / 2; i++) {
+        int first = i;
+        int last = n - 1 - i;
+        for (int j = first; j < last; j++) {
+            int offset = j - first;
+            int top = arr[first][j];
 
-    // for (int i = 0; i < n / 2; i++) {
-        for (int j = 0; j < n - 1; j++) {
-            num = arr[j][n - 1];
-            arr[j][n - 1] = arr[0][j];
+            arr[first][j] = arr[last-offset][first];
 
-            temp = arr[n - 1][n - 1 - j];
-            arr[n - 1][n - 1 - j] = num;
+            arr[last-offset][first] = arr[last][last-offset];
 
-            num = arr[n - 1 - j][0];
-            arr[n - 1 - j][0] = temp;
+            arr[last][last-offset] = arr[i][last];
 
-            arr[0][j] = num;
+            arr[j][last] = top;
+
         }
-    // }
+    }
 }
 
 void randomizeArr(int arr[N][N], int n) {
