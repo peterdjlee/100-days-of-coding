@@ -3,9 +3,6 @@
 
 #define N 5
 
-void rotate(int arr[N][N], int n) {
-}
-
 void printArr(int arr[N][N], int n) {
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
@@ -20,42 +17,25 @@ void printArr(int arr[N][N], int n) {
     std::cout << std::endl;
 }
 
-void rotateEdge(int arr[N][N], int n) {
-    int prevNum = arr[0][0];
+void rotate(int arr[N][N], int n) {
+    int temp = 0;
     int num = 0;
-    int i;
+    int offset = 0;
 
-    for (i = 1; i < n; i++) {
-        num = arr[0][i];
-        arr[0][i] = prevNum;
-        prevNum = num;
-    }
+    // for (int i = 0; i < n / 2; i++) {
+        for (int j = 0; j < n - 1; j++) {
+            num = arr[j][n - 1];
+            arr[j][n - 1] = arr[0][j];
 
-    // printArr(arr, n);
+            temp = arr[n - 1][n - 1 - j];
+            arr[n - 1][n - 1 - j] = num;
 
-    for (i = 1; i < n; i++) {
-        num = arr[i][n - 1];
-        arr[i][n - 1] = prevNum;
-        prevNum = num;
-    }
+            num = arr[n - 1 - j][0];
+            arr[n - 1 - j][0] = temp;
 
-    // printArr(arr, n);
-
-    for (i = n - 2; i >= 0; i--) {
-        num = arr[n - 1][i];
-        arr[n - 1][i] = prevNum;
-        prevNum = num;
-    }
-
-    // printArr(arr, n);
-
-    for (i = n - 2; i >= 0; i--) {
-        num = arr[i][0];
-        arr[i][0] = prevNum;
-        prevNum = num;
-    }
-
-    // printArr(arr, n);
+            arr[0][j] = num;
+        }
+    // }
 }
 
 void randomizeArr(int arr[N][N], int n) {
@@ -74,7 +54,7 @@ int main() {
 
     printArr(arr, N);
 
-    rotateEdge(arr, N);
+    rotate(arr, N);
 
     printArr(arr, N);
 
