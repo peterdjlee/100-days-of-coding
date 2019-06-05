@@ -11,16 +11,21 @@ def isSubstring(s1, s2):
     if s1 in s2:
         return True
 
-s1 = 'water'
-s2 = 'waterbottle'
-
-
 def isRotation(s1, s2):
     if len(s1) != len(s2):
         return False
-    
+    s1s1 = s1 + s1
+    if isSubstring(s1s1,s2):
+        return True
+    return False
+
+s1 = 'waterwetbottle'
+s2 = 'wetbottlewater'
+
+print(s2 + ' is a rotation of ' + s1 + ' = ' + str(isRotation(s1,s2)))
+
 
 ## Thoughts
 # What does it really mean for a string to be "in rotation"?
 # The two strings are in same order, but not in the same place (since order is invovled, can't hash)
-# A brute force solution would be to
+# Basically just extend the first string and check if the second string is a substring of the first
