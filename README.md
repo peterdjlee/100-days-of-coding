@@ -11,9 +11,16 @@ An attempt at coding every day, even just a little bit! By doing this, I wish to
 2. String manipulation
     * urlify.py
     * one_away.py
+    * string_compression.py
+    * string_rotation.py
     
 3. Array
     * longest_palinedrome.py
+    * rotate_matrix.cpp
+    * zero_matrix.cpp
+    
+4. Linked List (implemented in C++)
+    * remove_dups.cpp
     
 ## Programming Languages:
 1. Python
@@ -24,4 +31,11 @@ An attempt at coding every day, even just a little bit! By doing this, I wish to
     * longest_palinedrome.py
     * permutation_palinedrome.py
     * one_away.py
+    * string_compression.py
+    * string_rotation.py
+    
+2. C++
+    * rotate_matrix.cpp
+    * zero_matrix.cpp
+    * remove_dups.cpp
 
