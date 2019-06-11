@@ -7,13 +7,13 @@
 
 int size(Node*);
 Node* kthToLast(Node*, int);
-Node* nodeAt(Node*);
+Node* nodeAt(Node*, int);
 int kToIndex(int, int);
 
 
 Node* kthToLast(Node* head, int k) {
     int index = kToIndex(size(head), k);
-    return head->nodeAt(index);
+    return nodeAt(head, index);
 }
 
 int size(Node* head) {
@@ -32,7 +32,6 @@ Node* nodeAt(Node* head, int index) {
     Node* t = head;
     for (int i = 0; i < index; i++) {
         t = t->getNext();
-        i++;
     }
     return t;
 }
