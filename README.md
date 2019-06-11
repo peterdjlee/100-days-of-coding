@@ -21,6 +21,7 @@ An attempt at coding every day, even just a little bit! By doing this, I wish to
     
 4. Linked List (implemented in C++)
     * remove_dups.cpp
+    * kth_to_last.cpp
     
 ## Programming Languages:
 1. Python
@@ -38,4 +39,5 @@ An attempt at coding every day, even just a little bit! By doing this, I wish to
     * rotate_matrix.cpp
     * zero_matrix.cpp
     * remove_dups.cpp
+    * kth_to_last.cpp
 
