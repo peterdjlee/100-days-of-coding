@@ -6,14 +6,14 @@
 #include "linked_list.h"
 
 int size(Node*);
-Node* kthToLast(LinkedList*, int);
+Node* kthToLast(Node*, int);
+Node* nodeAt(Node*);
 int kToIndex(int, int);
 
 
-Node* kthToLast(LinkedList* list, int k) {
-    Node* head = list->nodeAt(0);
+Node* kthToLast(Node* head, int k) {
     int index = kToIndex(size(head), k);
-    return list->nodeAt(index);
+    return head->nodeAt(index);
 }
 
 int size(Node* head) {
@@ -26,6 +26,15 @@ int size(Node* head) {
     }
 
     return len;
+}
+
+Node* nodeAt(Node* head, int index) {
+    Node* t = head;
+    for (int i = 0; i < index; i++) {
+        t = t->getNext();
+        i++;
+    }
+    return t;
 }
 
 int kToIndex(int size, int k) {
@@ -41,14 +50,15 @@ int main() {
     list1->insert(new Node("3"));
     list1->insert(new Node("4"));
     list1->insert(new Node("5"));
-
+    
     std::cout << list1->getPrintString();
-
-    std::cout << kthToLast(list1, 0)->getData() << std::endl;
-    std::cout << kthToLast(list1, 1)->getData() << std::endl;
-    std::cout << kthToLast(list1, 2)->getData() << std::endl;
-    std::cout << kthToLast(list1, 3)->getData() << std::endl;
-    std::cout << kthToLast(list1, 4)->getData() << std::endl;
+    
+    Node* head = list1->nodeAt(0);
+    std::cout << kthToLast(head, 0)->getData() << std::endl;
+    std::cout << kthToLast(head, 1)->getData() << std::endl;
+    std::cout << kthToLast(head, 2)->getData() << std::endl;
+    std::cout << kthToLast(head, 3)->getData() << std::endl;
+    std::cout << kthToLast(head, 4)->getData() << std::endl;
 
     return 0;
 }
