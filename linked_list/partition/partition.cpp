@@ -10,28 +10,30 @@
 #include <iostream>
 #include "node.h"
 
-void partition(Node* head, int partNum) {
+Node* partition(Node* head, int partNum) {
     Node* newHead = head;
     Node* prev = nullptr;
     Node* temp = head;
 
-    while (temp->getNext() != nullptr) {
+    while (temp != nullptr) {
         if (temp->getData() < partNum && temp != head) {
             prev->setNext(temp->getNext());
             temp->setNext(newHead);
             newHead = temp;
+            temp = prev->getNext();
         } else {
             prev = temp;
+            temp = temp->getNext();
         }
-        temp = temp->getNext();
     }
+    return newHead;
 }
 
 std::string printList(Node* head) {
     std::string output;
     Node* n = head;
     while (n != nullptr) {
-        output += n->getData();
+        output += std::to_string(n->getData());
         output += " -> ";
         n = n->getNext();
     }
@@ -44,23 +46,29 @@ int main() {
     Node* head = new Node(3);
     Node* t = head;
     
-    t->setNext(new Node(5));
+    t->setNext(new Node(2));
     t = t->getNext();
     t->setNext(new Node(8));
     t = t->getNext();
     t->setNext(new Node(5));
     t = t->getNext();
+    t->setNext(new Node(3));
+    t = t->getNext();
+    t->setNext(new Node(7));
+    t = t->getNext();
+    t->setNext(new Node(8));
+    t = t->getNext();
     t->setNext(new Node(10));
     t = t->getNext();
-    t->setNext(new Node(2));
+    t->setNext(new Node(3));
     t = t->getNext();
-    t->setNext(new Node(1));
+    t->setNext(new Node(15));
     
     std::cout << printList(head);
 
-    partition(head, 5);
+    Node* newHead = partition(head, 7);
 
-    std::cout << printList(head);
+    std::cout << printList(newHead);
 
     return 0;
 }
