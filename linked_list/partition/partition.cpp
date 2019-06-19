@@ -16,15 +16,15 @@ Node* partition(Node* head, int partNum) {
     Node* temp = head;
 
     while (temp != nullptr) {
+        Node* next = temp->getNext();
         if (temp->getData() < partNum && temp != head) {
             prev->setNext(temp->getNext());
             temp->setNext(newHead);
             newHead = temp;
-            temp = prev->getNext();
         } else {
             prev = temp;
-            temp = temp->getNext();
         }
+        temp = next;
     }
     return newHead;
 }
