@@ -78,8 +78,11 @@ int main() {
     
     std::cout << printList(head1) << "+ " << printList(head2) << std::endl;
 
+    add_list(head1, head2);
+
+    std::cout << printList(head1) << std::endl;
     return 0;
 }
 
 // Thoughts
-// 
+// My initial solution could not account for when the value added up to a 2 digit number.
