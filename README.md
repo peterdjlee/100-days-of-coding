@@ -25,6 +25,8 @@ An attempt at coding every day, even just a little bit! By doing this, I wish to
     * remove_middle_node.cpp
     * partition.cpp
     * sum_list.cpp
+    * check_palindrome.cpp
+    * find_intersection.cpp
     
 ## Programming Languages:
 1. Python
@@ -46,4 +48,6 @@ An attempt at coding every day, even just a little bit! By doing this, I wish to
     * remove_middle_node.cpp
     * partition.cpp
     * sum_list.cpp
+    * check_palindrome.cpp
+    * find_intersection.cpp
 
