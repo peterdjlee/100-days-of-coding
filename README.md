@@ -27,6 +27,7 @@ An attempt at coding every day, even just a little bit! By doing this, I wish to
     * sum_list.cpp
     * check_palindrome.cpp
     * find_intersection.cpp
+    * detect_loop.cpp
     
 ## Programming Languages:
 1. Python
@@ -50,4 +51,5 @@ An attempt at coding every day, even just a little bit! By doing this, I wish to
     * sum_list.cpp
     * check_palindrome.cpp
     * find_intersection.cpp
+    * detect_loop.cpp
 
