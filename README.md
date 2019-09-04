@@ -18,6 +18,7 @@ An attempt at coding every day, even just a little bit! By doing this, I wish to
     * longest_palinedrome.py
     * rotate_matrix.cpp
     * zero_matrix.cpp
+    * flip.py
     
 4. Linked List (implemented in C++)
     * remove_dups.cpp
@@ -40,7 +41,8 @@ An attempt at coding every day, even just a little bit! By doing this, I wish to
     * one_away.py
     * string_compression.py
     * string_rotation.py
-    
+    * flip.py
+
 2. C++
     * rotate_matrix.cpp
     * zero_matrix.cpp
