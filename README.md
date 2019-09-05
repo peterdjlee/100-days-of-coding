@@ -13,6 +13,7 @@ An attempt at coding every day, even just a little bit! By doing this, I wish to
     * one_away.py
     * string_compression.py
     * string_rotation.py
+    * unique_emails.py
     
 3. Array
     * longest_palinedrome.py
@@ -42,6 +43,7 @@ An attempt at coding every day, even just a little bit! By doing this, I wish to
     * string_compression.py
     * string_rotation.py
     * flip.py
+    * unique_emails.py
 
 2. C++
     * rotate_matrix.cpp
