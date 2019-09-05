@@ -29,8 +29,9 @@
 def numUniqueEmails(emails):
     uniqueEmails = []
     for email in emails:
-        localName = email.split("@")[0]
-        domainName = email.split("@")[1]
+        splitEmail = email.split("@")
+        localName = splitEmail[0]
+        domainName = splitEmail[1]
 
         # remove dots
         cleanLocalName = localName.replace(".", "")  
