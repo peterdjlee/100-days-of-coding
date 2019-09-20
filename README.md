@@ -30,6 +30,10 @@ An attempt at coding every day, even just a little bit! By doing this, I wish to
     * check_palindrome.cpp
     * find_intersection.cpp
     * detect_loop.cpp
+
+5. Tree & Heap (implemented in Python)
+    * range_sum.py
+    * merge_trees.py
     
 ## Programming Languages:
 1. Python
@@ -44,6 +48,8 @@ An attempt at coding every day, even just a little bit! By doing this, I wish to
     * string_rotation.py
     * flip.py
     * unique_emails.py
+    * range_sum.py
+    * merge_trees.py
 
 2. C++
     * rotate_matrix.cpp
