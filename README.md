@@ -1,7 +1,7 @@
 # 100-days-of-coding
 An attempt at coding every day, even just a little bit! By doing this, I wish to challenge my problem solving skills and train my discipline.
 
-## Techniques:
+## Data Structure / Algorithm:
 1. Hashmap
     * twoSum.py
     * is_unique.py
@@ -30,6 +30,9 @@ An attempt at coding every day, even just a little bit! By doing this, I wish to
     * check_palindrome.cpp
     * find_intersection.cpp
     * detect_loop.cpp
+
+5. Dymanic Programming
+    * coin_change.py
 
 5. Tree & Heap (implemented in Python)
     * range_sum.py
