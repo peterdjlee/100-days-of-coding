@@ -31,12 +31,12 @@ An attempt at coding every day, even just a little bit! By doing this, I wish to
     * find_intersection.cpp
     * detect_loop.cpp
 
-5. Dymanic Programming
-    * coin_change.py
-
 5. Tree & Heap (implemented in Python)
     * range_sum.py
     * merge_trees.py
+
+6. Dymanic Programming
+    * coin_change.py
     
 ## Programming Languages:
 1. Python
