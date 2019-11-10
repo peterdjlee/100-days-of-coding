@@ -1,5 +1,5 @@
-# 100-days-of-coding
-An attempt at coding every day, even just a little bit! By doing this, I wish to challenge my problem solving skills and train my discipline.
+# Interview Prep
+A collection of materials I've practiced or solved to strengthen my data structures and algorithms knowledge.
 
 ## Data Structure / Algorithm:
 1. Hashmap
