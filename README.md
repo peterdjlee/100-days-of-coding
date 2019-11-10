@@ -53,6 +53,7 @@ An attempt at coding every day, even just a little bit! By doing this, I wish to
     * unique_emails.py
     * range_sum.py
     * merge_trees.py
+    * coin_change.py
 
 2. C++
     * rotate_matrix.cpp
