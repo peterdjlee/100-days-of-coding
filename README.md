@@ -37,6 +37,8 @@ An attempt at coding every day, even just a little bit! By doing this, I wish to
 
 6. Dymanic Programming
     * coin_change.py
+    * longest_increase_subseq.py
+    * edit_dist.py
     
 ## Programming Languages:
 1. Python
@@ -54,6 +56,8 @@ An attempt at coding every day, even just a little bit! By doing this, I wish to
     * range_sum.py
     * merge_trees.py
     * coin_change.py
+    * longest_increase_subseq.py
+    * edit_dist.py
 
 2. C++
     * rotate_matrix.cpp
