@@ -1,4 +1,4 @@
-# Interview Prep
+# Data Structures and Algorithms
 A collection of materials I've practiced or solved to strengthen my data structures and algorithms knowledge. (Missing a number of problems I've solved using websites)
 
 ## Data Structure / Algorithm:
